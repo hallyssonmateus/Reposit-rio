@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
-    <title>Hallysson Mateus</title>
+    <title>Portfolio</title>
     <!-- Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,119 +14,236 @@
         href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;500&family=Nunito:wght@200;500&display=swap"
         rel="stylesheet">
     <!--Dev Icons Fonts-->
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-          
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Media Queries -->
+    <link rel="stylesheet" media="screen" href="./styles.css" />
 </head>
 
 <body>
-    <div class="caixa-principal" id="home">
-        <nav>
-            <h2 class="porfolio">Portifo<span>lio</span></h2>
-            <ul>
-                <li><a class="link-menu" href="#home">Home</a></li>
-                <li><a class="link-menu" href="#sobre">About me</a></li>
-                <li><a class="link-menu" href="#work">Projetos</a></li>
-                <li><a class="link-menu" href="#fale-comigo">My skills</a></li>
-            </ul>
-        </nav>
 
-        <div class="meu-nome">
-            <h1>Hallysson Mateus <span>Santos Assunção</span></h1>
-            <h3>Programador FullStack PHP JavaScript Bootstrap</h3>
+    <nav class="navbar navbar-fixed-top navbar-inverse navbar-transparente">
+        <div class="container">
+
+            <!-- header -->
+            <div class="navbar-header">
+
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#barra-navegacao">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a href="index.html" class="navbar-brand">
+                    <span class="white-text">Portfo</span><span class="
+              aqua-text">lio</span>
+                </a>
+
+            </div>
+
+            <!-- navbar -->
+            <div class="collapse navbar-collapse" id="barra-navegacao">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#me">About me</a></li>
+                    <li><a href="#project">Projetos</a></li>
+                    <li><a href="#skill">My Skills</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
+    </nav>
 
-    <section id="sobre">
-        <img src="./img/me.png">
-        <div>
-            <h2>Sobre Mim</h2>
-            <p>Sou um desenvolvedor Full Stack em ascensão, focado em PHP, JavaScript e Bootstrap. Comprometido em aprender e aprimorar minhas habilidades para criar aplicações web incríveis. </p>
-            <p>Estou constantemente buscando desafios e colaborações que me ajudem a crescer como desenvolvedor. Junte-se a mim nesta jornada de aprendizado e inovação!</p>
-            <button>Entre em contato</button>
+    <section id="home">
+        <div class="container">
+            <div class="row">
+                <!-- Nome -->
+                <div class="col-md-10">
+                    <h1 class="nome-capa">Hallysson Mateus <span style="color: aqua;">Santos Assunção</span></h1>
+                    <h3 style="color: white;">Programador FullStack PHP JavaScript Bootstrap</h3>
+                </div>
+
+            </div>
         </div>
     </section>
 
-    <div class="projetos" id="work">
-        <h2>Principais Projetos</h2>
+    <section class="sobre" id="me">
+        <div class="container">
+            <div class="row">
+                <!-- Foto -->
+                <div class="col-md-6">
+                    <img class="myfoto" src="./img/me.png" class="img-responsive" class="img-circle">
+                </div>
 
-        <div class="card-alinhamento">
-            <div class="card">
-                <h5>Projeto X</h5>
-                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                    alteration in some form.</p>
-                <a target="_blank">Ver Projeto</a>
-            </div>
+                <!-- Sobre mim -->
+                <div class="col-md-6">
+                    <h2>Sobre Mim</h2>
+                    <p>Olá, sou Hallysson Mateus, estudante de Engenharia de Automação e um entusiasta do
+                        desenvolvimento Full Stack com foco nas tecnologias PHP, JavaScript e Bootstrap. Minha jornada
+                        profissional é guiada pela paixão em criar aplicações web impactantes e inovadoras. </p>
+                    <p>Estou constantemente buscando desafios e colaborações que me ajudem a crescer como desenvolvedor.
+                        Junte-se a mim nesta jornada de aprendizado e inovação!</p>
+                    <h3>Vamos conversar?</h3>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <a href="https://github.com/hallyssonmateus?tab=repositories" target="_blank"
+                                class="media-logo"><img src="./img/gitlogo.png" class="img-circle"></a>
+                        </div>
 
-            <div class="card">
-                <h5>Projeto Y</h5>
-                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                    alteration in some form.</p>
-                <a target="_blank">Ver Projeto</a>
-            </div>
+                        <div class="col-md-2">
+                            <a href="https://www.linkedin.com/in/hallysson-mateus-santos-assunção/" target="_blank"
+                                class="media-logo"><img src="./img/linkedin.png" class="img-circle"></a>
+                        </div>
 
-            <div class="card">
-                <h5>Projeto Z</h5>
-                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                    alteration in some form.</p>
-                <a target="_blank">Ver Projeto</a>
+                        <div class="col-md-2">
+                            <a href="" class="media-logo"><img src="./img/telefone.png" class="img-circle"></a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
+    </section>
 
-        
-    </div>
+    <section class="projetos" id="project">
+        <div class="container">
+            <h2>Principais Projetos</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="./img/cardp1.png" alt="Imagem de capa do card">
+                        <div class="card-body">
+                            <h4 class="card-title">Spotiby - Projeto curso</h4>
+                            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer
+                                preencher o conteúdo do card.</p>
+                            <a href="#" class="btn btn-primary" target="_blank">Visitar</a>
+                            <a href="#" class="btn btn-primary" target="_blank">Repositorio</a>
+                        </div>
+                    </div>
+                </div>
 
-    <footer id="fale-comigo">
-        <h2>My Skills</h2>
-        <p>Conheça as tecnologias que domino:</p>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="./img/cardp2.png" alt="Imagem de capa do card">
+                        <div class="card-body">
+                            <h4 class="card-title">Jogo Da Velha</h4>
+                            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer
+                                preencher o conteúdo do card.</p>
+                            <a href="#" class="btn btn-primary" target="_blank">Visitar</a>
+                            <a href="#" class="btn btn-primary" target="_blank">Repositorio</a>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="card-ali-skill">
-            <div class="card-footer">
-                <h5>Front-end</h5>
-                <i class="devicon-html5-plain colored"></i>
-                <i class="devicon-css3-plain colored"></i>
-                <i class="devicon-javascript-plain colored"></i>
-                <i class="devicon-jquery-plain colored"></i>
-                
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="./img/cardp3.png" alt="Imagem de capa do card">
+                        <div class="card-body">
+                            <h4 class="card-title">Meu primeiro Site</h4>
+                            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer
+                                preencher o conteúdo do card.</p>
+                            <a href="#" class="btn btn-primary" target="_blank">Visitar</a>
+                            <a href="#" class="btn btn-primary" target="_blank">Repositorio</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="card-footer">
-                <h5>Back-end</h5>
-                <i class="devicon-php-plain colored"></i>
-                <i class="devicon-ajax-plain colored"></i>
-                <i class="devicon-sass-plain colored"></i>
-            </div>
-
-            <div class="card-footer">
-                <h5>Databases</h5>
-                <i class="devicon-mysql-plain colored"></i>
-            </div>
-
-            <div class="card-footer">
-                <h5>Front-end Frameworks</h5>
-                <i class="devicon-bootstrap-plain colored"></i>
-            </div>
-
-            <div class="card-footer">
-                <h5>Back-end Frameworks</h5>
-                <i class="devicon-laravel-plain colored"></i>
-            </div>
-
-            <div class="card-footer">
-                <h5>Ferramentas de Controle de Versão</h5>
-                <i class="devicon-git-plain colored"></i>
-                <i class="devicon-github-plain colored"></i>
-            </div>
-            
-            
         </div>
+    </section>
 
+
+
+    <footer class="myskills" id="skill">
+        <div class="container">
+            <h2>My Skills</h2>
+            <p>Conheça as tecnologias que domino:</p>
+            <div class="row distancia">
+                <div class="col-md-3" class="distancia">
+                    <div class="card skill-color">
+                        <div class="card-body">
+                            <h5 class="card-title">Front-end</h5>
+                            <i class="devicon-html5-plain colored" data-toggle="tooltip" data-placement="bottom"
+                                title="HTML5"></i>
+                            <i class="devicon-css3-plain colored" data-toggle="tooltip" data-placement="bottom"
+                                title="CSS3"></i>
+                            <i class="devicon-javascript-plain colored" data-toggle="tooltip" data-placement="bottom"
+                                title="JavaScript"></i>
+                            <i class="devicon-jquery-plain colored" data-toggle="tooltip" data-placement="bottom"
+                                title="jQuery"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card skill-color">
+                        <div class="card-body">
+                            <h5 class="card-title">Back-end</h5>
+                            <i class="devicon-php-plain colored" data-toggle="tooltip" data-placement="bottom" title="PHP"></i>
+                            <i class="devicon-ajax-plain colored" data-toggle="tooltip" data-placement="bottom" title="Ajax"></i>
+                            <i class="devicon-sass-plain colored" data-toggle="tooltip" data-placement="bottom" title="SASS"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card skill-color">
+                        <div class="card-body">
+                            <h5 class="card-title">Back-end</h5>
+                            <i class="devicon-mysql-plain colored" data-toggle="tooltip" data-placement="bottom" title="MySQL"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card skill-color">
+                        <div class="card-body">
+                            <h5 class="card-title">Front-end Frameworks</h5>
+                            <i class="devicon-bootstrap-plain colored" data-toggle="tooltip" data-placement="bottom" title="BootStrap"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="col-md-3">
+                    <div class="card skill-color">
+                        <div class="card-body">
+                            <h5 class="card-title">Back-end Frameworks</h5>
+                            <i class="devicon-laravel-plain colored" data-toggle="tooltip" data-placement="bottom" title="Laravel"></i>
+                        </div>
+                    </div>
+                </div>-->
+
+                <div class="col-md-3">
+                    <div class="card skill-color">
+                        <div class="card-body">
+                            <h5 class="card-title">Framework - Controle de Versão</h5>
+                            <i class="devicon-git-plain colored" data-toggle="tooltip" data-placement="bottom" title="Git"></i>
+                            <i class="devicon-github-plain colored" data-toggle="tooltip" data-placement="bottom" title="GitHub"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </footer>
+
+
     <!-- Ion Icons-->
     <i class="devicon-adonisjs-original"></i>
 
-          
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 </body>
 
 </html>

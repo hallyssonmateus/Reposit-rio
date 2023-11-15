@@ -2,213 +2,211 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Josefin Sans', sans-serif;
     font-family: 'Nunito', sans-serif;
 }
 
-.caixa-principal {
-    height: 100vh;
-    width: 100%;
-    background-color: #191919;
-   
-    
+html, body {
+    height: 100%;
+    overflow: auto;
+    background: linear-gradient(50deg,#33CCFF,#006600);
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 25px;
+nav.navbar-transparente {
+    padding: 15px 0px;
 }
-/*Mudar o estilo do nome portifolio*/
-.porfolio {
-    color: white;
+
+.navbar-brand {
+    padding: 5px 15px;
     font-size: 35px;
 }
 
-.porfolio span {
-    color: aqua;
+.navbar-brand span.white-text {
+    color: white; /* Cor da parte "Porfo" */
 }
 
-/*Mudar o estilo do menu*/
-li {
-    color: white;
-    list-style: none;
-    display: inline-block;
-    font-size: 20px;
-    margin-right: 20px;
-    cursor: pointer;
+.navbar-brand span.aqua-text {
+    color: aqua; /* Cor da parte "lio" */
 }
 
-li:hover {
-    color: aqua;
-    transition: 0.5s;
-}
-
-.link-menu {
-    text-decoration: none;
+.navbar-header a {
+    font-size: 30px;
     color: white;
 }
-/*Mudar o estilo do menu*/
-.meu-nome {
-    position: absolute;
-    top: 50%;
-    left: 10%;
+
+.navbar-inverse .navbar-nav>li>a {
+    color: white !important; /* Cor do texto padrão */
 }
 
-h1 {
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: aqua !important; /* Cor do texto no hover */
+}
+
+/* ----------- Capa  ----------- */
+
+#home {
+    margin-top: 70px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background: url(./img/Capa.png) no-repeat;
+    background-size: cover;    
+}
+.nome-capa {
+    font-size: 50px;
     color: white;
-    font-size: 55px;
 }
 
-h1 span {
-    color: aqua;
+/* ----------- Sobre mim  ----------- */
+
+.sobre {
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
-.meu-nome h3 {
-    color: white;
-    font-size: 25px;
-}
-/*Mudar o estilo do Sobre mim*/
-section {
+.myfoto {
     display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 30px 15%;
-    background-color: #191919;
+    height: 450px;
 }
 
-section img {
-    height: 400px;
-    margin-right: 180px;
-}
-
-section div h2 {
+.sobre h2 {
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
     color: white;
-    font-size: 75px;
+    text-align: center;
 }
 
-section div p {
+.sobre p {
+    padding-top: 5px;
+    font-size: 20px;
+    letter-spacing: -0.04em;
     color: white;
-    font-size: 24px;
-    margin-top: 30px;
-    margin-bottom: 60px;
 }
 
-section div button {
-    color:white;
-    background:#f9004d;
-    height: 56px;
-    width: 180px;
-    font-size: 18px;
-    border: none;
-    border-radius: 26px;
-    cursor: pointer;    
+.sobre h3 {
+    padding-top: 5px;
+    font-size: 40px;
+    letter-spacing: -0.04em;
+    color: white;
 }
 
-section div button:hover {
-    background-color: aqua;
-    transition: 0.5s;
+.media-logo img {
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+
 }
-/*Mudar o estilo do Projetos*/
+
+/* ----------- Principais Projetos  ----------- */
 .projetos {
-    background-color: #191919;
-    padding-top: 50px;
+    /*border: 5px solid blue;*/
+    padding-top: 10px;
     padding-bottom: 100px;
 }
 
 .projetos h2 {
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
     color: white;
-    font-size: 75px;
     text-align: center;
+    padding-bottom: 30px;
 }
 
 .card {
-    background-color: black;
-    height: 365px;
-    width: 335px;
+    background-color: #101010;
+    font-size: 20px;
+    height: auto; /* Adiciona esta linha para definir a altura */
     border-radius: 20px;
-    padding: 20px 35px;
+}
+.card-body {
+    padding: 10px 20px;
+}
+
+.card-img-top {
+    border-radius: 20px 0px 20px 0px;
+    width: 100%;
+    height: auto; /* Alterado para 'auto' para manter a proporção original da imagem */
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 20px;
+    color: white;
+    font-weight: 500px;
     text-align: center;
 }
-
-.card-alinhamento {
-    margin-top: 100px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.card h5 {
+.card-text {
     color: white;
-    font-size: 24px;    
-}
-
-.card p {
-    color: rgb(211, 145, 145);
-    margin: 25px 35px;
-}
-
-.card a {
-    background-color: #f9004d;
-    color: white;
-    padding: 10px 10px;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: 0.5s;
-    text-decoration: none;
-}
-
-.card a:hover {
-    background-color: aqua;
-}
-/*Mudar o estilo do Rodape*/
-footer {
-    background-color: #191919;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-footer h2 {
-    color: white;
-    font-size: 75px;
-}
-
-footer p {
-    color: white;
-    font-size: 25px;
-}
-
-.card-ali-skill {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 25px;
-    padding-top: 10px; /* Reduza o valor da margem interna superior */
-    padding-bottom: 10px;
-}
-
-.card-footer {
-    flex: 1 1 33%;
-    max-width: 33%;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    font-size: 15px;
     padding: 10px;
 }
 
-.card-footer h5 {
-    font-size: 24px;
-    margin-bottom: 25px;
-    font-weight: bold;
-    padding-left: 10px;
-    border-left: 5px solid aqua;
+
+
+
+/* ----------- Myskills  ----------- */
+
+.myskills {
+    /* border: 5px solid blue; */
+    padding-top: 10px;
+    padding-bottom: 120px;
+}
+
+.distancia {
+    padding-bottom: 20px;
+}
+
+.myskills h2 {
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    color: white;
+    text-align: center;
+}
+.myskills p {
+    /*border: 5px solid blue;*/
+    font-size: 20px;
     color: white;
 }
 
-.card-footer i {
-    font-size: 45px;
-    margin-right: 5px;
+.card-body i {
+    font-size: 40px; /* Escolha o tamanho desejado */
+}
+
+.skill-color {
+    background-color: rgba(192, 148, 148, 0.5);
+}
+
+/* ----------- Media Queries  ----------- */
+@media screen and (max-width: 768px){
+    .myfoto {
+        height: 50px;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media screen and (max-width: 992px){
+    .myfoto {
+        height: 60px;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .myfoto {
+        height: 200px;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
 }
