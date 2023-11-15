@@ -47,7 +47,7 @@ nav.navbar-transparente {
     margin-top: 70px;
     padding-top: 120px;
     padding-bottom: 120px;
-    background: url(./img/Capa.png) no-repeat;
+    background: url(/img/Capa.png) no-repeat;
     background-size: cover;    
 }
 .nome-capa {
