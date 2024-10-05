@@ -8,9 +8,42 @@
 html, body {
     height: 100%;
     overflow: auto;
-    background: linear-gradient(50deg,#33CCFF,#006600);
+    /* background: linear-gradient(50deg,#33CCFF,#006600); */
+    background-color: #1C1C1C;
 }
 
+/* Animação */
+.anima {
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 2s;
+}
+
+/* .container :nth-child(2){
+    transition-delay: 400ms;
+}
+.container :nth-child(3){
+    transition-delay: 700ms;
+} */
+.row :nth-child(2){
+    transition-delay: 400ms;
+}
+.row :nth-child(3){
+    transition-delay: 700ms;
+}
+/* .row :nth-child(2){
+    transition-delay: 400ms;
+} */
+
+/* Estilização Site */
 nav.navbar-transparente {
     padding: 15px 0px;
 }
