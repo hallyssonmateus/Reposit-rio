@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
-    <title>Portfolio</title>
+    <title>Portfolio - Hallysson Mateus</title>
     <!-- Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,6 +15,8 @@
         rel="stylesheet">
     <!--Dev Icons Fonts-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
 
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -26,35 +28,41 @@
 
     <nav class="navbar navbar-fixed-top navbar-inverse navbar-transparente">
         <div class="container">
-
+    
             <!-- header -->
             <div class="navbar-header">
-
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                     data-target="#barra-navegacao">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-
+    
                 <a href="index.html" class="navbar-brand">
-                    <span class="white-text">Portfo</span><span class="
-              aqua-text">lio</span>
+                    <span class="white-text">Portfo</span><span class="aqua-text">lio</span>
                 </a>
-
             </div>
-
+    
             <!-- navbar -->
             <div class="collapse navbar-collapse" id="barra-navegacao">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#me">About me</a></li>
-                    <li><a href="#project">Projetos</a></li>
-                    <li><a href="#skill">My Skills</a></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#me">ABOUT ME</a></li>
+                    <li><a href="#project">PROJETOS</a></li>
+                    <li><a href="#skill">MY SKILLS</a></li>
+                    <!-- Adicionando o toggle ao final do menu -->
+                    <li>
+                        <div class="toggle-container">
+                            <div class="toogle" id="toogle">
+                                <div class="toogle-buttom"></div>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
+    
 
     <section id="home">
         <div class="container">
@@ -96,6 +104,9 @@
 
                         <div class="col-md-2">
                             <a href="" class="media-logo"><img src="./img/contato.png" class="img-circle" data-toggle="tooltip" data-placement="top" title="hallyssonmateus96@gmail.com"></a>
+                            <!-- <p>hallyssonmateus96@gmail.com</p> -->
+                        </div>
+                        <div class="col-md-2">
                             <p>hallyssonmateus96@gmail.com</p>
                         </div>
                     </div>

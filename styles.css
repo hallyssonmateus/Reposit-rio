@@ -10,6 +10,7 @@ html, body {
     overflow: auto;
     /* background: linear-gradient(50deg,#33CCFF,#006600); */
     background-color: #1C1C1C;
+    transition: .5s;
 }
 
 /* Animação */
@@ -46,6 +47,8 @@ html, body {
 /* Estilização Site */
 nav.navbar-transparente {
     padding: 15px 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
 }
 
 .navbar-brand {
@@ -64,14 +67,71 @@ nav.navbar-transparente {
 .navbar-header a {
     font-size: 30px;
     color: white;
+    font-weight: 600;
 }
 
 .navbar-inverse .navbar-nav>li>a {
     color: white !important; /* Cor do texto padrão */
+    font-weight: 600;
 }
 
 .navbar-inverse .navbar-nav>li>a:hover {
     color: aqua !important; /* Cor do texto no hover */
+}
+
+.toggle-container {
+    display: inline-block;
+    margin-left: 15px;
+    padding-top: 8px;
+}
+
+.toogle {
+    width: 60px;
+    height: 25px;
+    background-color: #4d4d4d;
+    border-radius: 100px;
+    position: relative;
+    cursor: pointer;
+}
+
+.toogle .toogle-buttom {
+    width: 30px;
+    height: 25px;
+    background-color: #000;
+    border-radius: 50%;
+    transform: scale(0.9);
+    position: absolute;
+    left: 0;
+    transition: .5s;
+}
+
+.toogle.dark-mode {
+    background-color: #c3c3c3;
+}
+
+.toogle.dark-mode .toogle-buttom {
+    left: 30px;
+    background-color: #fff;
+}
+
+body.dark-mode{
+    background-color: #e4e4e4;
+}
+
+body.dark-mode h2 {
+    color: #000;
+}
+
+body.dark-mode .sobre p {
+    color: #000;
+}
+
+body.dark-mode .sobre h3 {
+    color: #000;
+}
+
+body.dark-mode .myskills p {
+    color: #000;
 }
 
 /* ----------- Capa  ----------- */
@@ -108,6 +168,7 @@ nav.navbar-transparente {
     letter-spacing: -0.04em;
     color: white;
     text-align: center;
+    transition: .5s;
 }
 
 .sobre p {
@@ -115,6 +176,7 @@ nav.navbar-transparente {
     font-size: 20px;
     letter-spacing: -0.04em;
     color: white;
+    transition: .5s;
 }
 
 .sobre h3 {
@@ -122,6 +184,8 @@ nav.navbar-transparente {
     font-size: 40px;
     letter-spacing: -0.04em;
     color: white;
+    text-align: center;
+    transition: .5s;
 }
 
 .media-logo img {
@@ -216,6 +280,8 @@ nav.navbar-transparente {
 @media screen and (max-width: 768px){
     .myfoto {
         height: 50px;
+        display: block;
+        margin: 0 auto;
     }
 
     .card {
@@ -226,7 +292,9 @@ nav.navbar-transparente {
 
 @media screen and (max-width: 992px){
     .myfoto {
-        height: 60px;
+        height: 80px;
+        display: block;
+        margin: 0 auto;
     }
 
     .card {
@@ -237,6 +305,8 @@ nav.navbar-transparente {
 @media screen and (max-width: 1200px){
     .myfoto {
         height: 200px;
+        display: block;
+        margin: 0 auto;
     }
 
     .card {

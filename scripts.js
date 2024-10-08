@@ -13,3 +13,13 @@ const elements = document.querySelectorAll('.anima')
 elements.forEach((element)=>{
     myObserver.observe(element)
 })
+
+// Modo Dark
+
+let toogle = document.getElementById('toogle')
+let body = document.querySelector('body')
+
+toogle.addEventListener('click', ()=>{
+    toogle.classList.toggle('dark-mode')
+    body.classList.toggle('dark-mode')
+})
