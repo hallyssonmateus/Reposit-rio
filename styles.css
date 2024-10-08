@@ -86,12 +86,29 @@ nav.navbar-transparente {
 }
 
 .toogle {
+    display: flex;
+    justify-content: space-between; /* Ícones em lados opostos */
+    align-items: center;
     width: 60px;
     height: 25px;
     background-color: #4d4d4d;
     border-radius: 100px;
     position: relative;
     cursor: pointer;
+}
+
+.toggle i {
+    font-size: 16px;
+    position: relative;
+    z-index: 1; /* Coloca os ícones acima do botão */
+}
+
+.moon-icon {
+    margin-right: auto; /* Posiciona à esquerda */
+}
+
+.sun-icon {
+    margin-left: auto; /* Posiciona à direita */
 }
 
 .toogle .toogle-buttom {
@@ -134,19 +151,82 @@ body.dark-mode .myskills p {
     color: #000;
 }
 
+/* Fundo para modo dark */
+body.dark-mode #particles-js {
+    background-color: #000; /* Fundo preto no modo dark */
+}
+
+/* Fundo para modo light */
+body.light-mode #particles-js {
+    background-color: #e4e4e4; /* Cor do body no modo light */
+}
+
+/* Fundo para modo light */
+body:not(.dark-mode) #particles-js {
+    background-color: #fff; /* Or your desired light background color */
+  }
+
+  body.dark-mode .toggle-button {
+    left: 30px; /* Mova o botão para a direita no modo dark */
+}
+
+/* Quando o modo escuro está ativo, troque a exibição dos ícones */
+body.dark-mode .moon-icon {
+    display: none; /* Oculta o ícone da lua */
+}
+
+body.dark-mode .sun-icon {
+    display: block; /* Mostra o ícone do sol */
+}
+
+/* Quando o modo claro está ativo, troque a exibição dos ícones */
+body.light-mode .sun-icon {
+    display: none; /* Oculta o ícone do sol */
+}
+
+body.light-mode .moon-icon {
+    display: block; /* Mostra o ícone da lua */
+}
+
+
+
+
 /* ----------- Capa  ----------- */
 
 #home {
-    margin-top: 70px;
-    padding-top: 120px;
-    padding-bottom: 120px;
-    background: url('./img/capa.png') no-repeat;
-    background-size: cover;    
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
 }
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100vh; 
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #000;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+}
+
 .nome-capa {
     font-size: 50px;
     color: white;
 }
+
+h1.nome-capa {
+    margin-top: 200px;
+}
+
+h3.nome-capa {
+    margin-top: 200px;
+}
+
 
 /* ----------- Sobre mim  ----------- */
 

@@ -16,6 +16,7 @@
     <!--Dev Icons Fonts-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
     <!-- Bootstrap -->
@@ -54,6 +55,8 @@
                     <li>
                         <div class="toggle-container">
                             <div class="toogle" id="toogle">
+                                <i class="fa-regular fa-moon moon-icon"></i>
+                                <i class="fa-regular fa-sun sun-icon"></i>
                                 <div class="toogle-buttom"></div>
                             </div>
                         </div>
@@ -65,17 +68,17 @@
     
 
     <section id="home">
+        <div id="particles-js"></div> <!-- Particles.js container -->
         <div class="container">
             <div class="row">
-                <!-- Nome -->
                 <div class="col-md-10">
-                    <h1 class="nome-capa anima">Hallysson Mateus <span style="color: aqua;">Santos Assunção</span></h1>
+                    <h1 class="nome-capa anima" style="color: white;">Hallysson Mateus <span style="color: aqua;">Santos Assunção</span></h1>
                     <h3 class="anima" style="color: white;">Programador FullStack C#(.Net) React </h3>
                 </div>
-
             </div>
         </div>
     </section>
+    
 
     <section class="sobre" id="me">
         <div class="container">
@@ -249,6 +252,6 @@
             $('[data-toggle="tooltip"]').tooltip();
         });
     </script>
+    <script src="scripts.js"></script>
 </body>
-<script src="scripts.js"></script>
 </html>
