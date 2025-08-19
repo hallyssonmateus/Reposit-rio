@@ -11,7 +11,7 @@ function Projects (){
         },
         {
             title: 'Projeto 2',
-            description: 'Descrição breve do projeto 2.',
+            description: 'Descrição breve do projeto 2, tenha calmaaa.',
             image: '/project2.png',
             github: 'https://github.com/seu-usuario/projeto2',
             live: 'https://projeto2.com'

@@ -1,5 +1,7 @@
 import { FaReact, FaHtml5, FaCss3Alt, FaJs, FaGithub } from 'react-icons/fa';
-import { SiTypescript, SiTailwindcss } from 'react-icons/si';
+import { SiTypescript, SiTailwindcss} from 'react-icons/si';
+import { TbBrandCSharp } from "react-icons/tb";
+
 
 function Skills (){
 
@@ -11,6 +13,7 @@ function Skills (){
         { name: 'HTML5', icon: <FaHtml5 size={40} className="text-orange-600" /> },
         { name: 'CSS3', icon: <FaCss3Alt size={40} className="text-blue-600" /> },
         { name: 'GitHub', icon: <FaGithub size={40} className="text-gray-800" /> },
+        { name: 'C#', icon: <TbBrandCSharp size={40} className="text-purple-700" /> },
     ];
 
     return (
