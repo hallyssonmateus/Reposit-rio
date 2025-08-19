@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 function Hero (){
     return (
-        <section className="flex flex-col md:flex-row items-center justify-center py-40 gap-12">
+        <section className="flex flex-col md:flex-row items-center justify-center py-40 gap-12 bg-gray-100">
             {/* Foto Perfil */}
             <div className="flex-shrink-0">
                 <img src="My_Photo.jpg" alt="Foto de perfil" className="w-48 h-48 rounded-full border-4 border-white shadow-md object-cover"></img>
