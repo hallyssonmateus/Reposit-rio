@@ -16,7 +16,7 @@ function Hero (){
 
                 <div className="flex justify-center md:justify-start gap-4 mt-6">
                     <a href="https://github.com/hallyssonmateus" target="_blank" rel="noopener noreferrer"><FaGithub className="text-xl text-gray-800" /></a>
-                    <a href="https://github.com/hallyssonmateus" target="_blank" rel="noopener noreferrer"><FaLinkedin className="text-xl text-gray-800" /></a>
+                    <a href="https://www.linkedin.com/in/hallysson-mateus-santos-assun%C3%A7%C3%A3o/" target="_blank" rel="noopener noreferrer"><FaLinkedin className="text-xl text-gray-800" /></a>
                     <a href="https://github.com/hallyssonmateus" target="_blank" rel="noopener noreferrer"><FaEnvelope className="text-xl text-gray-800" /></a>
                 </div>
 

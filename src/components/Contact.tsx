@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 function Contact (){
     return (
-        <section className="py-20 text-gray-800">
+        <section className="py-20 bg-gray-100">
             <div className="container mx-auto px-4 text-center">
                 <h2 className="text-3xl font-bold mb-6">Entre em Contato</h2>
                 <p className="mb-8 text-lg">Sinta-se à vontade para me chamar nas redes abaixo!</p>
