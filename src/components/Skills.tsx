@@ -6,20 +6,6 @@ import { TbBrandCSharp } from "react-icons/tb";
 import { MdOutlineApi } from "react-icons/md";
 import { PiStackFill } from "react-icons/pi";
 
-type SkillCardProps = {
-  icon: JSX.Element;
-  name: string;
-};
-
-function SkillCard({icon, name}: SkillCardProps){
-    return (
-        <div className='bg-white rounded-xl p-6 flex flex-col items-center shadow-sm hover:shadow-md transition duration-300'>
-            <div className="text-blue-600">{icon}</div>
-            <p className="font-medium mt-2 text-gray-800">{name}</p>
-        </div>
-    )
-}
-
 
 function Skills (){
 
@@ -53,23 +39,32 @@ function Skills (){
 
                 <h3 className="text-2xl font-semibold mb-6 text-gray-800">Backend</h3>
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 mb-12">
-                {backend.map((skill) => (
-                    <SkillCard key={skill.name} {...skill} />
-                ))}
+                    {backend.map((skill) => (
+                        <div key={skill.name} className="bg-white rounded-xl p-6 flex flex-col items-center shadow-sm hover:shadow-md transition duration-300">
+                            <div className="text-blue-600">{skill.icon}</div>
+                            <p className="font-medium mt-2 text-gray-800">{skill.name}</p>
+                        </div>
+                    ))}
                 </div>
 
                 <h3 className="text-2xl font-semibold mb-6 text-gray-800">Frontend</h3>
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 mb-12">
-                {frontend.map((skill) => (
-                    <SkillCard key={skill.name} {...skill} />
-                ))}
+                    {frontend.map((skill) => (
+                        <div key={skill.name} className="bg-white rounded-xl p-6 flex flex-col items-center shadow-sm hover:shadow-md transition duration-300">
+                            <div className="text-blue-600">{skill.icon}</div>
+                            <p className="font-medium mt-2 text-gray-800">{skill.name}</p>
+                        </div>
+                    ))}
                 </div>
 
                 <h3 className="text-2xl font-semibold mb-6 text-gray-800">Ferramentas</h3>
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
-                {tools.map((skill) => (
-                    <SkillCard key={skill.name} {...skill} />
-                ))}
+                    {tools.map((skill) => (
+                        <div key={skill.name} className="bg-white rounded-xl p-6 flex flex-col items-center shadow-sm hover:shadow-md transition duration-300">
+                            <div className="text-blue-600">{skill.icon}</div>
+                            <p className="font-medium mt-2 text-gray-800">{skill.name}</p>
+                        </div>
+                    ))}
                 </div>
 
             </div>
