@@ -17,7 +17,7 @@ function Projects (){
             description: 'API completa para um sistema de pedidos para pizzaria. Estruturação da aplicação em .NET Core 8.0 utilizando arquitetura em camadas (MVC).',
             image: '/Projeto02.PNG',
             github: 'https://github.com/hallyssonmateus/Simulador9_Sist_Pizzaria',
-            live: 'https://projeto2.com',
+            live: '',
             techs: ['C#', 'ASP.NET Web API', 'SQL Server', 'JWT', '+1 mais']
         },
         {
@@ -26,7 +26,7 @@ function Projects (){
             description: 'API completa para um sistema de pedidos para pizzaria. Estruturação da aplicação em .NET Core 8.0 utilizando arquitetura em camadas (MVC).',
             image: '/Projeto03.PNG',
             github: 'https://github.com/hallyssonmateus/Projeto_AspNet_Framework',
-            live: 'https://projeto2.com',
+            live: '',
             techs: ['C#', 'ASP.NET Web Forms', 'HTML', 'CSS','GitHub', '+1 mais']
         },
         {
@@ -34,7 +34,7 @@ function Projects (){
             subtitle: 'Em desenvolvimento',
             description: 'Uma aplicação web para gerenciar e visualizar finanças pessoais. Permitindo registrar receitas, despesas e investimentos; Gerar relatórios e gráficos; Acompanhar saldo e evolução mensal.',
             image: '/Projeto04.png',
-            github: 'https://github.com/hallyssonmateus/Projeto_AspNet_Framework',
+            github: 'https://github.com/hallyssonmateus/Sist_Controle_Financeiro',
             live: 'https://projeto2.com',
             techs: ['C#', 'ASP.NET Web API', 'Sql Server', 'Tailwind CSS','GitHub', '+1 mais']
         }
