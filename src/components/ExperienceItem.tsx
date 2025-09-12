@@ -8,7 +8,7 @@ interface ExperienceItemProps {
         location: string;
         description: string;
         achievements: string[];
-        tecnologies: string[];
+        technologies: string[];
     };
 }
 
