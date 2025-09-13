@@ -41,10 +41,10 @@ function Projects (){
     ];
 
     return (
-    <section id="projects" className="py-16 bg-gray-100">
+    <section id="projects" className="py-16 bg-gray-100 dark:bg-gray-900">
             <div className="container mx-auto px-4">
-                <h2 className="text-3xl text-gray-600 text-bold text-center mb-4">Projetos em Destaque</h2>
-                <p className="text-gray-600 text-center mb-12">
+                <h2 className="text-3xl text-gray-600 dark:text-gray-300 text-bold text-center mb-4">Projetos em Destaque</h2>
+                <p className="text-gray-600 text-center mb-12 dark:text-gray-300">
                     Alguns dos projetos que desenvolvi, demonstrando expertise em diferentes tecnologias e soluções
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

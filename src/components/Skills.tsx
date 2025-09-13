@@ -32,12 +32,12 @@ function Skills (){
   ];
 
     return (
-        <section className="bg-gray-100 py-16">
+        <section className="bg-gray-100 py-16 dark:bg-gray-900">
             <div className="container mx-auto text-center px-4">
-                <h2 className="text-3xl font-bold mb-8">Habilidades Técnicas</h2>
-                <p>Tecnologias e ferramentas que domino para criar soluções robustas e escaláveis.</p>
+                <h2 className="text-3xl font-bold mb-8 dark:text-gray-300">Habilidades Técnicas</h2>
+                <p className='text-gray-600 text-center mb-12 dark:text-gray-300'>Tecnologias e ferramentas que domino para criar soluções robustas e escaláveis.</p>
 
-                <h3 className="text-2xl font-semibold mb-6 text-gray-800">Backend</h3>
+                <h3 className="text-2xl font-semibold mb-6 text-gray-800 dark:text-gray-300">Backend</h3>
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 mb-12">
                     {backend.map((skill) => (
                         <div key={skill.name} className="bg-white rounded-xl p-6 flex flex-col items-center shadow-sm hover:shadow-md transition duration-300">
@@ -47,7 +47,7 @@ function Skills (){
                     ))}
                 </div>
 
-                <h3 className="text-2xl font-semibold mb-6 text-gray-800">Frontend</h3>
+                <h3 className="text-2xl font-semibold mb-6 text-gray-800 dark:text-gray-300">Frontend</h3>
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 mb-12">
                     {frontend.map((skill) => (
                         <div key={skill.name} className="bg-white rounded-xl p-6 flex flex-col items-center shadow-sm hover:shadow-md transition duration-300">
@@ -57,7 +57,7 @@ function Skills (){
                     ))}
                 </div>
 
-                <h3 className="text-2xl font-semibold mb-6 text-gray-800">Ferramentas</h3>
+                <h3 className="text-2xl font-semibold mb-6 text-gray-800 dark:text-gray-300">Ferramentas</h3>
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
                     {tools.map((skill) => (
                         <div key={skill.name} className="bg-white rounded-xl p-6 flex flex-col items-center shadow-sm hover:shadow-md transition duration-300">
