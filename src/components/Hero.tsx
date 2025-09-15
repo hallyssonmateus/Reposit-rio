@@ -1,10 +1,23 @@
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import {useIntersect} from "../hooks/useIntersect";
+import { useEffect } from "react";
+// import { gsap } from "gsap";
 
 function Hero (){
+    const [photoRef, isVisible] = useIntersect<HTMLDivElement>({
+    threshold: 0.5, // 50% do elemento visível para a animação disparar
+  });
+    useEffect(() => {
+    if (isVisible) {
+      photoRef.current?.classList.add("fade_in");
+    }
+    }, [isVisible, photoRef]);
+    
+
     return (
-        <section className="flex flex-col md:flex-row items-center justify-center py-40 gap-12 bg-gray-100 dark:bg-gray-900">
+        <section className="flex flex-col md:flex-row items-center justify-center py-40 gap-12 bg-gray-100 dark:bg-gray-900 hero">
             {/* Foto Perfil */}
-            <div className="flex-shrink-0">
+            <div ref={photoRef} className="flex-shrink-0 fade_left" >
                 <img src="My_Photo.jpg" alt="Foto de perfil" className="w-48 h-48 rounded-full border-4 border-white shadow-md object-cover"></img>
             </div>
 

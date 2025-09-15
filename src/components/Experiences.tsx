@@ -1,8 +1,15 @@
+// import { useLayoutEffect } from "react";
 import { experienceData } from "../data/experienceData"
 import ExperienceItem from "./ExperienceItem"
+// import { gsap } from "gsap";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 
 function Experiences (){
+    // useLayoutEffect(()=>{
+    //   gsap.from  
+    // },[])
+
     return (
         <section id="experience" className="bg-gray-100 dark:bg-gray-900 py-16">
             <div className="container mx-auto text-center px-4">

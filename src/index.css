@@ -1,3 +1,16 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
+/* Animações */
+.hero{
+    border: 2px solid;
+}
+.fade_left {
+    transform: translateX(-700px);
+    opacity: 0;
+    transition: transform 0.8s cubic-bezier(0.4,0,0.2,1), opacity 0.8s cubic-bezier(0.4,0,0.2,1);
+}
+.fade_in { /* Nova classe para o estado final da animação */
+    transform: translateX(0);
+    opacity: 1;
+}

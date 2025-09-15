@@ -3,7 +3,7 @@ function About (){
     return (
       <section className="py-16 bg-gray-100 text-gray-800 dark:bg-gray-900">
       <div className="container mx-auto px-4 text-center max-w-3xl">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6 dark:text-gray-300">Sobre Mim</h2>
+        <h2 className="text-3xl md:text-4xl font-bold mb-6 dark:text-gray-300 animate-fade-up animate-duration-500 animate-delay-500">Sobre Mim</h2>
         <p className="text-lg leading-relaxed mb-4 dark:text-gray-300">
           Olá! Sou o Hallysson Mateus, sou engenheiro de automação que fiz transição para Desenvolvedor Web Full Stack com foco em tecnologias C#(.NET), Javascript, React.js. Minha jornada profissional é guiada em criar soluções impactantes e entregar valor através da tecnologia.
         </p>
