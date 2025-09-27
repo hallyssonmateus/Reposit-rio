@@ -34,7 +34,7 @@ function Skills (){
     return (
         <section className="bg-gray-100 py-16 dark:bg-gray-900">
             <div className="container mx-auto text-center px-4">
-                <h2 className="text-3xl font-bold mb-8 dark:text-gray-300">Habilidades Técnicas</h2>
+                <h2 className="text-3xl text-gray-600 dark:text-gray-300 text-bold text-center mb-4">Habilidades Técnicas</h2>
                 <p className='text-gray-600 text-center mb-12 dark:text-gray-300'>Tecnologias e ferramentas que domino para criar soluções robustas e escaláveis.</p>
 
                 <h3 className="text-2xl font-semibold mb-6 text-gray-800 dark:text-gray-300">Backend</h3>

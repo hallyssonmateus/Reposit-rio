@@ -27,10 +27,10 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({experience}) => {
 
                 <p className="text-gray-700 leading-relaxed  mb-4">{experience.description}</p>
 
-                <h4 className="font-semi-bold tex-gray-700 dark:text-gray-300 mb-2 text-left">Principais Conquistas:</h4>
+                <h4 className="font-bold tex-gray-700 dark:text-gray-300 mb-2 text-left">Principais Conquistas:</h4>
                 <ul className="list-none ml-0">
                     {experience.achievements.map((achievement, index) => (
-                        <li key={index} className="flex items-start text-gray-600 mb-1">
+                        <li key={index} className="flex items-start text-gray-600 mb-1 dark:text-gray-300">
                             <span className="text-blue-500 mr-2">•</span>{achievement}
                         </li>
                     ))}

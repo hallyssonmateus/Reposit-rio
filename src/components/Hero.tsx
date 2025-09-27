@@ -1,17 +1,65 @@
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import {useIntersect} from "../hooks/useIntersect";
-import { useEffect } from "react";
-// import { gsap } from "gsap";
+import { useEffect, useLayoutEffect } from "react";
+import { gsap } from "gsap";
 
 function Hero (){
     const [photoRef, isVisible] = useIntersect<HTMLDivElement>({
     threshold: 0.5, // 50% do elemento visível para a animação disparar
   });
+    
+    useLayoutEffect(() => {
+    // 1. Crie um contexto para GSAP matchMedia para gerenciar animações responsivas
+    const ctx = gsap.matchMedia();
+
+    ctx.add("(min-width: 768px)", () => {
+      // 2. Animação para telas maiores (desktop)
+      // Estado inicial (fora da tela)
+      gsap.set(photoRef.current, { x: -700, opacity: 0 });
+      
+      // Animação de entrada e saída
+      const animation = gsap.to(photoRef.current, {
+        x: 0,
+        opacity: 1,
+        duration: 1,
+        ease: "power2.out"
+      });
+
+      // Retorne a animação para GSAP para que ele a gerencie (por exemplo, matando-a ao sair)
+      return () => animation.revert();
+    });
+
+    ctx.add("(max-width: 767px)", () => {
+      // 3. Animação para telas menores (mobile)
+      // Estado inicial (fora da tela, mas em Y para um movimento vertical)
+      gsap.set(photoRef.current, { y: -200, opacity: 0 });
+
+      // Animação de entrada e saída
+      const animation = gsap.to(photoRef.current, {
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        ease: "power2.out"
+      });
+
+      return () => animation.revert();
+    });
+
+    // Remova o contexto quando o componente for desmontado
+    return () => ctx.revert();
+  }, []);
+
     useEffect(() => {
     if (isVisible) {
-      photoRef.current?.classList.add("fade_in");
+      gsap.to(photoRef.current, { opacity: 1, x: 0, y: 0 });
+    } else {
+        gsap.to(photoRef.current, {
+            x: window.innerWidth >= 768 ? -700 : 0,
+            y: window.innerWidth < 768 ? -200 : 0,
+            opacity: 0
+        });
     }
-    }, [isVisible, photoRef]);
+    }, [isVisible]);
     
 
     return (
@@ -22,7 +70,7 @@ function Hero (){
             </div>
 
             {/* Conteudo */}
-            <div className="text-center md: text-left">
+            <div className="text-center md: text-center">
                 <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-300">Hallysson Mateus</h1>
                 <p className="text-lg text-gray-600 mt-1">Desenvolvedor Fullstack</p>
                 <p className="text-gray-500 mt-1">Aprimorando habilidades em C#, .NET, React e SQL Server.</p>

@@ -2,9 +2,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 /* Animações */
-.hero{
-    border: 2px solid;
-}
+
 .fade_left {
     transform: translateX(-700px);
     opacity: 0;
