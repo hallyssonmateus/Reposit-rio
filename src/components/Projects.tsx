@@ -7,7 +7,7 @@ function Projects (){
             subtitle: 'Site completo para pequenas e médias empresas',
             description: "Responsável pelo desenvolvimento das páginas “Quem Somos” e “Contato” do site de viagens, aplicando conceitos de usabilidade e design responsivo.",
             image: '/Projeto01.PNG',
-            github: 'https://github.com/seu-usuario/projeto1',
+            github: 'https://github.com/vianabsouza/destinos-incriveis',
             live: 'https://destinos-incriveis.vercel.app/',
             techs: ['HTML', 'CSS', 'JavaScript', 'Figma','GitHub', '+2 mais']
         },
