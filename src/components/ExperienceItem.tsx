@@ -1,15 +1,8 @@
 import React from "react";
+import type { Experience } from "../types/experience";
 
 interface ExperienceItemProps {
-    experience: {
-        title: string;
-        company: string;
-        period: string;
-        location: string;
-        description: string;
-        achievements: string[];
-        technologies: string[];
-    };
+    experience: Experience;
 }
 
 const ExperienceItem: React.FC<ExperienceItemProps> = ({experience}) => {

@@ -1,5 +1,8 @@
-export const experienceData = [
+import type { Experience } from "../types/experience";
+
+export const experienceData: Experience[] = [
   {
+    id:1,
     title: 'Desenvolvedor Full Stack Jr',
     company: 'Télos conecta',
     period: 'jul/2024 - fev/2025',
@@ -16,6 +19,7 @@ export const experienceData = [
     technologies: ['C#', '.NET Core', 'Entity Framework', 'React', 'SQL Server','Api REST', 'xUnit']
   },
   {
+    id: 2,
     title: 'Desenvolvedor Frontend Web Jr',
     company: 'Proz Educação',
     period: 'abr/2024 - out/2024',
