@@ -57,7 +57,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({project}) => {
                 {/* Links usando a função auxiliar para clareza */}
                 <div className="flex space-x-6">
                     {renderLink(github, <FaGithub className="mr-1" />, 'Código', true)}
-                    {renderLink(live, <FaExternalLinkAlt className="mr-1" />, 'Demo', isLiveLinkAvailable)}
+                    {renderLink(live, <FaExternalLinkAlt className="mr-1" />, 'Aplicação', isLiveLinkAvailable)}
                 </div>
             </div>
         </div>
